@@ -1,0 +1,32 @@
+<app-display [toDisplay]="display"></app-display>
+
+<table>
+    <tbody>
+        <tr>
+            <td><app-button-n value="1" (keyPressed)="addToDisplay(1)" ></app-button-n></td>
+            <td><app-button-n value="2" (keyPressed)="addToDisplay(2)"></app-button-n></td>
+            <td><app-button-n value="3" (keyPressed)="addToDisplay(3)"></app-button-n></td>
+            <td><app-button-n value="+" (keyPressed)="addToDisplay('+')"></app-button-n></td>
+        </tr>
+        <tr>
+            <td><app-button-n value="4" (keyPressed)="addToDisplay(4)"></app-button-n></td>
+            <td><app-button-n value="5" (keyPressed)="addToDisplay(5)"></app-button-n></td>
+            <td><app-button-n value="6" (keyPressed)="addToDisplay(6)"></app-button-n></td>
+            <td><app-button-n value="-" (keyPressed)="addToDisplay('-')"></app-button-n></td>
+        </tr>
+        <tr>
+            <td><app-button-n value="7" (keyPressed)="addToDisplay(7)"></app-button-n></td>
+            <td><app-button-n value="8" (keyPressed)="addToDisplay(8)"></app-button-n></td>
+            <td><app-button-n value="9" (keyPressed)="addToDisplay(9)"></app-button-n></td>
+            <td><app-button-n value="/" (keyPressed)="addToDisplay('/')"></app-button-n></td>
+        </tr>
+        <tr>
+            <td><app-button-n value="=" (keyPressed)="addToDisplay('=')"></app-button-n></td>
+            <td><app-button-n value="0" (keyPressed)="addToDisplay(0)"></app-button-n></td>
+            <td><app-button-n value="C" (keyPressed)="addToDisplay('C')"></app-button-n></td>
+            <td><app-button-n value="*" (keyPressed)="addToDisplay('*')"></app-button-n></td>
+        </tr>
+    </tbody>
+</table>
+
+
