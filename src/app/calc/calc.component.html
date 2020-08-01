@@ -29,4 +29,8 @@
     </tbody>
 </table>
 
-
+<ul>
+  <li *ngFor="let result of results | async">
+    {{ result.name }}
+  </li>
+</ul>

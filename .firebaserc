@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "calc-80a11": {
+      "hosting": {
+        "calc": [
+          "calc-80a11"
+        ]
+      }
+    }
+  }
+}

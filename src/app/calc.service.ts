@@ -9,6 +9,7 @@ export class CalcService {
 
   display: Observable<string>;
 
+
   addToDisplay(value)
   {
     if(value==='C')
@@ -17,6 +18,6 @@ export class CalcService {
     }
 
     this.display = (this.display)? of(`${this.display}${value}`): of(`${value}`);
-    
+
   }
 }

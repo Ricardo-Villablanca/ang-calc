@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ButtonNComponent } from '../button-n/button-n.component';
 import { DisplayComponent } from '../display/display.component';
+import { ResultsService } from '../results.service';
+import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-calc',
@@ -9,9 +12,12 @@ import { DisplayComponent } from '../display/display.component';
 })
 export class CalcComponent implements OnInit {
 
-  constructor() { }
+  constructor( private resultsService: ResultsService ) { }
+
+  results: Observable<any>;
 
   ngOnInit(): void {
+    this.results = this.resultsService.get();
   }
 
   display: String;
